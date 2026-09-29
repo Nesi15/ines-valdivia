@@ -45,6 +45,15 @@
     text-decoration:none; display:inline-flex; align-items:center; gap:6px;
   }
   .top-actions .primary{ background:var(--accent); color:#fff; border-color:var(--accent); }
+  .top-actions a.portfolio-btn{ border:2px solid var(--accent); color:var(--accent); font-weight:700; }
+  .top-actions a.portfolio-btn:hover{ background:var(--accent); color:#fff; text-decoration:none; }
+  .portfolio-pill{
+    display:inline-flex; align-items:center; gap:6px;
+    border:1.5px solid var(--accent); border-radius:999px; padding:6px 14px;
+    color:var(--accent); font-weight:700; background:#fff;
+  }
+  .portfolio-pill:hover{ background:var(--accent); color:#fff; text-decoration:none; }
+  .portfolio-pill .url{ font-weight:600; }
   .top-actions .lang-switch{ display:inline-flex; border:1px solid var(--line); border-radius:999px; padding:3px; background:#fff; }
   .top-actions .lang-switch a{ border:0; padding:7px 11px; font-size:12px; font-weight:700; letter-spacing:0.04em; color:var(--ink-soft); background:none; }
   .top-actions .lang-switch a.active{ background:var(--ink); color:#fff; }
@@ -60,7 +69,7 @@
     margin:0 0 14px;
   }
   .contact-bar{
-    display:flex; flex-wrap:wrap; gap:18px;
+    display:flex; flex-wrap:wrap; align-items:center; gap:18px;
     border-top:1px solid var(--line); border-bottom:1px solid var(--line);
     padding:12px 0; margin-bottom:26px;
     font-size:13px; color:var(--ink-soft);
@@ -132,7 +141,7 @@
 <body>
 
 <div class="top-actions no-print">
-  <a href="en/index.html">← Portfolio</a>
+  <a class="portfolio-btn" href="https://nesi15.github.io/ines-valdivia/en/">View portfolio →</a>
   <span class="lang-switch" aria-label="Language"><a href="cv.html" hreflang="es" lang="es">ES</a><a class="active" href="cv-en.html" hreflang="en" aria-current="true">EN</a></span>
   <a class="primary" href="assets/cv/ines-valdivia-cv-en.pdf" download="Inés Valdivia Urbano CV.pdf">Download PDF</a>
 </div>
@@ -146,7 +155,7 @@
     <div><b>Madrid, Spain</b></div>
     <div>+34 637 992 770</div>
     <div>inesvaldivia02@gmail.com</div>
-    <div><a href="en/index.html">Portfolio →</a></div>
+    <div><a class="portfolio-pill" href="https://nesi15.github.io/ines-valdivia/en/">Portfolio: <span class="url">nesi15.github.io/ines-valdivia/en</span> →</a></div>
   </div>
 
   <section>
